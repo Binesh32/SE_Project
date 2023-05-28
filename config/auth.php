@@ -64,12 +64,25 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
+        'useradmins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\UserAdmin::class,
+        ],
+        'organizationadmins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\OrganizationAdmin::class,
+        ],
+    ],
 
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
-    ],
+
 
     /*
     |--------------------------------------------------------------------------

@@ -10,17 +10,18 @@
 
             <div class="row">
 
-                <form class="shop-register" role="form">
+                <form class="shop-register"  action="{{ route('updateAdmin.profile', $editPost->id) }}" class="form mb-15" method="post"
+                    id="kt_contact_form" enctype="multipart/form-data" role="form">
 
                     <div class="col-sm-6">
-                        <div class="form-group validate-required" id="billing_first_name_field">
+                        <div class="form-group validate-required" name="name" id="billing_first_name_field" value="{{$editBlogs->title}}">
                             <label for="billing_first_name" class="control-label">
                                 <span class="grey">First Name:</span>
                                 <span class="required">*</span>
                             </label>
 
                             <input type="text" class="form-control "style="background-color: lightgrey;"
-                                name="billing_first_name" id="billing_first_name" placeholder="" value="">
+                                name="billing_first_name" id="billing_first_name" placeholder=""value="{{$editBlogs->title}}">
                         </div>
 
                         <div class="form-group">
@@ -32,9 +33,7 @@
                             <select class="form-control"style="background-color: lightgrey;" name="billing_state"
                                 id="billing_state">
                                 <option value="">Select …</option>
-                                <option value="KT">Male</option>
-                                <option value="LA">Female</option>
-                                <option value="BH">Others</option>
+                                <option value="KT">value="{{$editBlogs->title}}</option>
 
 
                             </select>
@@ -51,7 +50,7 @@
                             </label>
 
                             <input type="text" class="form-control "style="background-color: lightgrey;"
-                                name="billing_last_name" id="billing_last_name" placeholder="" value="">
+                                name="billing_last_name" id="billing_last_name" placeholder="" value="{{$editBlogs->title}}>
 
                         </div>
 
@@ -62,13 +61,11 @@
                             </label>
 
                             <input type="text" class="form-control "style="background-color: lightgrey;"
-                                name="billing_email" id="billing_email" placeholder="" value="">
+                                name="billing_email" id="billing_email" placeholder="" value="{{$editBlogs->title}}>
 
                         </div>
 
                     </div>
-
-
 
                     <div class="col-sm-6">
 
@@ -80,13 +77,9 @@
                             </label>
 
                             <input type="text" class="form-control "style="background-color: lightgrey;"
-                                name="billing_address_1" id="billing_address_1" placeholder="" value="">
+                                name="billing_address_1" id="billing_address_1" placeholder="" value="{{$editBlogs->title}}>
 
                         </div>
-
-
-
-
 
                         <div class="form-group validate-required validate-phone" id="billing_phone_field">
                             <label for="billing_phone" class="control-label">
@@ -95,16 +88,9 @@
                             </label>
 
                             <input type="text" class="form-control "style="background-color: lightgrey;"
-                                name="billing_phone" id="billing_phone" placeholder="" value="">
+                                name="billing_phone" id="billing_phone" placeholder="" value="{{$editBlogs->title}}">
 
                         </div>
-
-
-
-
-
-
-
                     </div>
 
                     <div class="col-sm-6">
@@ -115,12 +101,10 @@
                                 <span class="required">*</span>
                             </label>
 
-                            <select class="form-control"style="background-color: lightgrey;" name="billing_state_1"
+                            <select class="form-control"style="background-color: lightgrey;" name="billing_state"
                                 id="billing_state">
                                 <option value="">Select …</option>
-                                <option value="KT">KTM</option>
-                                <option value="LA">Lalitpur</option>
-                                <option value="BH">Bhaktapur</option>
+                                <option value="KT">value="{{$editBlogs->title}}</option>
 
 
                             </select>
@@ -137,15 +121,6 @@
                                 name="billing_password" id="billing_password" placeholder="" value="">
 
                         </div>
-
-
-
-
-
-
-
-
-
                     </div>
 
                     <div class="col-sm-12">

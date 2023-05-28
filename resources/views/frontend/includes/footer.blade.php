@@ -3,13 +3,15 @@
 					<div class="row">
 
 						<div class="col-md-4 col-sm-12 text-center">
-							
+
 						</div>
 
 						<div class="col-md-4 col-sm-6 text-center">
 							<div class="widget widget_contact topmargin_10">
 								<h3>Inbox Us</h3>
-								<form class="contact-form topmargin_45" method="post" action="https://html.modernwebtemplates.com/gogreen/">
+								<form class="contact-form topmargin_45" action="{{ route('inbox.Post') }}" method="post"
+                                id="kt_contact_form" enctype="multipart/form-data">
+                                @csrf
 									<p class="contact-form-name">
 							<label for="footer-name">Name <span class="required">*</span></label>
 							<input type="text" aria-required="true" size="30" value="" name="name" id="footer-name" class="form-control text-center" placeholder="Full Name">
@@ -31,7 +33,7 @@
 
 						<div class="col-md-4 col-sm-6 text-center">
 
-							
+
 						</div>
 
 					</div>

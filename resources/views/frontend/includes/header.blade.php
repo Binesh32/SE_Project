@@ -18,39 +18,39 @@
 									<ul class="mainmenu nav sf-menu">
 										<li class="active">
 											<a href="{{ route('home') }}">Home</a>
-										
+
 										</li>
 
 										<li>
 											<a href="{{ route('post') }}">Posts</a>
-											
+
 											<!-- eof mega menu -->
 										</li>
 
 										<li>
 											<a href="{{ route('blogs') }}">Blogs</a>
-											
+
 										</li>
 										<!-- eof pages -->
 
 										<li>
 											<a href="#">Recycle</a>
-											
+
 											<!-- eof mega menu -->
 										</li>
 										<!-- eof features -->
 
 
-										
+
 										<li>
 											<a href="{{ route('about') }}">About Us</a>
-											
+
 										</li>
-										
 
-										
 
-									
+
+
+
 								</nav>
 								<!-- eof main nav -->
 								<!-- header toggler -->
@@ -62,7 +62,7 @@
 							<div class="header_right_buttons display_table_cell text-right hidden-xs">
 								<div class="darklinks">
 								<ul class="mainmenu nav sf-menu">
-								
+
 								<li >
 											<a href="{{ route('usersignup') }}">SIGN UP</a>
 											<ul>
@@ -75,7 +75,7 @@
 												<li>
 													<a href="index_singlepage.html">As Admin</a>
 												</li>
-												
+
 											</ul>
 										</li>
 								<li><a href="{{ route('userlogin') }}">LOG IN</a>
@@ -84,15 +84,15 @@
 													<a href="{{ route('userlogin') }}">As User</a>
 												</li>
 												<li>
-													<a href="{{ route('organizationlogin') }}">As Organization</a>
+													<a href="{{ route('organization.login') }}">As Organization</a>
 												</li>
 												<li>
 													<a href="{{ route('adminlogin') }}">As Admin</a>
 												</li>
-												
-											</ul></li> 
+
+											</ul></li>
 								</ul>
-									
+
 								</div>
 							</div>
 						</div>

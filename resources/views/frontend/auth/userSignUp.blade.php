@@ -29,13 +29,13 @@
 										<span class="required">*</span>
 									</label>
 
-									<select class="form-control"style="background-color: lightgrey;" name="billing_state" id="billing_state">
+									<select class="form-control"style="background-color: lightgrey;" name="billing_state_1" id="billing_state">
 										<option value="">Select …</option>
 										<option value="KT">Male</option>
 										<option value="LA">Female</option>
 										<option value="BH">Others</option>
-										
-										
+
+
 									</select>
 								</div>
 
@@ -65,24 +65,24 @@
 
 							</div>
 
-							
+
 
 							<div class="col-sm-6">
 
-							
+
 								<div class="form-group address-field validate-required" id="billing_address_fields">
 									<label for="billing_address_1" class="control-label">
 										<span class="grey">Address:</span>
 										<span class="required">*</span>
 									</label>
 
-									<input type="text" class="form-control "style="background-color: lightgrey;" name="billing_address_1" id="billing_address_1" placeholder="" value="">
+									<input type="text" class="form-control "style="background-color: lightgrey;" name="billing_address" id="billing_address_1" placeholder="" value="">
 
 								</div>
 
-							
 
-								
+
+
 
 								<div class="form-group validate-required validate-phone" id="billing_phone_field">
 									<label for="billing_phone" class="control-label">
@@ -95,10 +95,10 @@
 								</div>
 
 
-								
 
 
-								
+
+
 
 							</div>
 
@@ -110,13 +110,13 @@
 										<span class="required">*</span>
 									</label>
 
-									<select class="form-control"style="background-color: lightgrey;" name="billing_state" id="billing_state">
+									<select class="form-control"style="background-color: lightgrey;" name="billing_state_2" id="billing_state">
 										<option value="">Select …</option>
 										<option value="KT">KTM</option>
 										<option value="LA">Lalitpur</option>
 										<option value="BH">Bhaktapur</option>
-										
-										
+
+
 									</select>
 								</div>
 
@@ -130,12 +130,12 @@
 
 								</div>
 
-								
-
-							
 
 
-							
+
+
+
+
 
 
 							</div>
@@ -148,7 +148,7 @@
 								<a class="theme_button color1 wide_button"  style="margin-left: 61rem;"href="{{ route('home') }}">Home</a>
 
 								<p class="divider_20 text-center">
-					Create an account  <a href="{{ route('usersignup') }}">User</a>, <a href="{{ route('organizationsignup') }}">Organization</a>or  <a href="{{ route('adminsignup') }}">Admin</a> 
+					Create an account  <a href="{{ route('usersignup') }}">User</a>, <a href="{{ route('organizationsignup') }}">Organization</a>or  <a href="{{ route('adminsignup') }}">Admin</a>
 					</a>
 				</p>
 
