@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('add_blogs', function (Blueprint $table) {
             $table->id();
-            $table->int('admin_id');
+            $table->integer('admin_id');
             $table->string('title');
             $table->string('message');
             $table->string('image');
