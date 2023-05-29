@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
-
-class OrganizationsAdmin extends Model
+use Illuminate\Foundation\Auth\User as Authenticatable;
+class OrganizationsAdmin extends Authenticatable
 {
     use HasFactory;
     use Notifiable;
